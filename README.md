@@ -18,14 +18,13 @@ along with their concrete class implementations.
 
 ## Comparing Abstract Classes and Interfaces
 
-- An abstract class may define instance and static variables that are inherited by subclasses.
-- An interface can define constants variables (static and final), but not instance or non-final static variables.
-- Neither an interface nor an abstract class can be instantiated using the `new` operator.
-- An abstract class can have parameterized constructors and the default constructor is always present in an abstract class.
-  - Abstract class constructors are called by subclass constructors to initialize inherited state.
-- An interface can't have a constructor.
-- An abstract class may define any number of concrete or abstract methods, including instance and static methods.
-- An interface may define any number of abstract, default, or static methods.
+| Abstract Class                                                                                | Interface                                                                                               |
+|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| May define instance and static variables                                                      | May define constant variables (static+final). Instance and non-final static variables are not allowed.  |
+| Can't instantiate using `new` operator.                                                       | Can't instantiate using `new` operator.                                                                 |
+| Can define parameterized constructors. Always has a default constructor.                      | Can't define a constructors.  Does not have a default constructor.                                      | 
+| Can't instantiate using `new` operator.                                                       | Can't instantiate using `new` operator.                                                                 |
+| May define any number of concrete or abstract methods, including instance and static methods. | May define any number of abstract, default, or static methods.                                          |
 
 An abstract class is useful when we want to define a base class that declares the
 generalized structure and behavior of a given abstraction without providing a complete implementation of every method.
