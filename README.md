@@ -18,13 +18,13 @@ along with their concrete class implementations.
 
 ## Comparing Abstract Classes and Interfaces
 
-| Abstract Class                                                                                | Interface                                                                                               |
-|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| May define instance and static variables                                                      | May define constant variables (static+final). Instance and non-final static variables are not allowed.  |
-| Can't instantiate using `new` operator.                                                       | Can't instantiate using `new` operator.                                                                 |
-| Can define parameterized constructors. Always has a default constructor.                      | Can't define a constructors.  Does not have a default constructor.                                      | 
-| Can't instantiate using `new` operator.                                                       | Can't instantiate using `new` operator.                                                                 |
-| May define any number of concrete or abstract methods, including instance and static methods. | May define any number of abstract, default, or static methods.                                          |
+| Abstract Class                                                                                | Interface                                                                                              |
+|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| May define instance and static variables                                                      | May define constant variables (static+final). Instance and non-final static variables are not allowed. |
+| Can't instantiate using `new` operator.                                                       | Can't instantiate using `new` operator.                                                                |
+| Can define parameterized constructors. Always has a default constructor.                      | Can't define a constructor.  Does not have a default constructor.                                      | 
+| Can't instantiate using `new` operator.                                                       | Can't instantiate using `new` operator.                                                                |
+| May define any number of concrete or abstract methods, including instance and static methods. | May define any number of abstract, default, or static methods.                                         |
 
 An abstract class is useful when we want to define a base class that declares the
 generalized structure and behavior of a given abstraction without providing a complete implementation of every method.
